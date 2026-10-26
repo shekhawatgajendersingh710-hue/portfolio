@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gajender Singh Shekhawat - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Gajender Singh</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+    </nav>
+
+    <section id="home">
+        <h2>Hello, I'm Gajender Singh Shekhawat</h2>
+        <p>A Second-Year Student at JECRC University with a deep passion for programming.</p>
+        <!-- Replace src with your actual image -->
+        <img src="" alt="Gajender Singh C:\Users\GAJENDER SINGH\Downloads" class="profile-pic">
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a second-year student at JECRC University, constantly exploring the world of software development. I have a strong interest in programming, problem-solving, and building interactive web applications. I enjoy leveraging AI tools like Cursor to optimize workflows and learn new technologies rapidly.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">HTML / CSS / JavaScript</span>
+            <span class="skill-badge">Cursor AI</span>
+            <span class="skill-badge">Software Development</span>
+            <span class="skill-badge">API Integration</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <input type="text" id="project-search" placeholder="Search projects by name or technology (e.g., Python, Quiz, Book)...">
+        
+        <div class="project-grid" id="project-grid">
+            <div class="project-card" data-tech="python">
+                <h3>1. Python Programs Collection</h3>
+                <p>Factorial, Fibonacci, and Structure-to-Dictionary conversion scripts.</p>
+                <p><strong>Technologies:</strong> Python</p>
+                <a href="#" class="btn">GitHub Repo</a>
+            </div>
+            
+            <div class="project-card" data-tech="python ai cursor">
+                <h3>2. Messy Python Code Improvement</h3>
+                <p>An original messy Python script properly refactored and improved using AI assistance.</p>
+                <p><strong>Technologies:</strong> Python, Cursor AI</p>
+                <a href="#" class="btn">GitHub Repo</a>
+            </div>
+
+            <div class="project-card" data-tech="ai cursor debugging">
+                <h3>3. Bug Fixing Using Cursor AI</h3>
+                <p>Identified and corrected an incorrect/buggy program utilizing Cursor AI's debugging features.</p>
+                <p><strong>Technologies:</strong> Cursor AI</p>
+                <a href="#" class="btn">GitHub Repo</a>
+            </div>
+
+            <div class="project-card" data-tech="html css javascript quiz">
+                <h3>4. Interactive Quiz Application</h3>
+                <p>A fully functional web-based quiz application developed during Lecture 10.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" class="btn">GitHub Repo</a> | <a href="#" class="btn">Live App</a>
+            </div>
+
+            <div class="project-card" data-tech="html css javascript book reading">
+                <h3>5. Book Reading List Application</h3>
+                <p>A dynamic reading list application built in Lecture 11 to track books read and to-be-read.</p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <a href="#" class="btn">GitHub Repo</a> | <a href="#" class="btn">Live App</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:shekhawatgajendersingh710@gmail.com">shekhawatgajendersingh710@gmail.com</a></p>
+        <p>Phone: +91 7849929249</p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </section>
+
+    <div id="chatbot-wrapper">
+        <div class="chat-header">AI Portfolio Chatbot</div>
+        <div id="chat-window">
+            <div class="bot-msg">Hi! Ask me anything about Gajender's portfolio.</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type a question...">
+            <button id="send-btn">Send</button>
+        </div>
+        <p id="api-error">API Request Failed. Please check console.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
